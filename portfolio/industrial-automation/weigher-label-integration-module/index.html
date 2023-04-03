@@ -4,11 +4,12 @@
     <meta property="og:title" content="Weigher-Label Integration Module" />
 <meta property="og:description" content="Bespoke smart integration module that links the factory weighing scales and label printers" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.geviton.co.ke/portfolio/industrial-automation/weigher-label-integration-module/" /><meta property="og:image" content="https://www.geviton.co.ke/images/portfolio/featured/002-GSK.jpg" /><meta property="article:section" content="portfolio" />
+<meta property="og:url" content="https://www.geviton.co.ke/portfolio/industrial-automation/weigher-label-integration-module/" /><meta property="og:image" content="https://www.geviton.co.ke/images/opengraph.jpg"/><meta property="article:section" content="portfolio" />
 <meta property="article:published_time" content="2022-12-22T00:39:59+03:00" />
 <meta property="article:modified_time" content="2022-12-22T00:39:59+03:00" />
 
 
+    
     
     
     <meta name="description"
@@ -19,18 +20,39 @@
     <link rel="icon" href="/images/logos/logo-orange.png" />
     <link rel="stylesheet" type="text/css" href="https://www.geviton.co.ke/css/index.a41be98e5e65b185b46e23a9a1398608.min.css" />
     <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="/scripts/marquee.js"></script>
-    <script src="https://www.geviton.co.ke/scripts/flowbite.min.9e0da67ed92998d69665bf9f7e6faaf5.min.js"></script>
+    <script src="https://www.geviton.co.ke/scripts/marquee.75bac6809bb80ad6ecd6a1645ca091d5.min.js"></script>
+    <script src="https://www.geviton.co.ke/scripts/flowbite.min.9e0da67ed92998d69665bf9f7e6faaf5.js"></script>
     <title>
 Weigher-Label Integration Module | Geviton
 </title>
+
+  <style>
+  @layer utilities {
+    .scrollbar::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  .marquee {
+    animation: scrolling var(--marquee-time) linear infinite;
+  }
+
+  .marquee:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-width))); }
+  }
+  </style>
 
 </head>
 <div id="#">
     <div id="status"></div>
 </div>
 
-<body class="h-screen bg-black font-sans smooth-scroll">
+<body class="h-screen bg-black font-sans smooth-scroll scrollbar">
     <div id="content"><div class="z-20 px-6 py-6 md:px-8">
   <nav class="z-20 flex items-center justify-between px-[2%]" aria-label="Global">
     <div class="w-full z-20 flex justify-center md:justify-start md:flex-1">
@@ -148,10 +170,6 @@ Weigher-Label Integration Module | Geviton
   </div>
 
   <div class="flex flex-col md:grid md:grid-cols-3 gap-4 px-[10%] h-max p-9">
-    
-    <div>
-      <img class="h-full w-full hover:scale-150 duration-500" src="/images/portfolio/featured/002-GSK.jpg" alt="">
-    </div>
     
   </div>
 </div>
