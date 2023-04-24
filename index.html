@@ -11,51 +11,31 @@
     
     
     
+    
     <meta name="description"
       content="A company that solves electronic design and manufacturing challenges across the world." />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" href="/images/logos/logo-orange.png" />
-    <link rel="stylesheet" type="text/css" href="https://www.geviton.co.ke/css/index.a41be98e5e65b185b46e23a9a1398608.min.css" />
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="https://www.geviton.co.ke/scripts/marquee.75bac6809bb80ad6ecd6a1645ca091d5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.geviton.co.ke/css/index.2132a6e4d89ab867799095ce1bfa383f.min.css" />
+    <script src="https://www.geviton.co.ke/scripts/cdn.min.4b5643f7d8641662eb58a3eee6009752.js" defer></script>
     <script src="https://www.geviton.co.ke/scripts/flowbite.min.9e0da67ed92998d69665bf9f7e6faaf5.js"></script>
+    <script src="https://www.geviton.co.ke/scripts/marquee.7dbcad385138fd2703b86c19a3cc121d.min.js"></script>
     <title>Geviton Enterprises Ltd</title>
-
-  <style>
-  @layer utilities {
-    .scrollbar::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-    }
-  }
-  .marquee {
-    animation: scrolling var(--marquee-time) linear infinite;
-  }
-
-  .marquee:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * var(--marquee-width))); }
-  }
-  </style>
 
 </head>
 <div id="#">
     <div id="status"></div>
 </div>
 
-<body class="h-screen bg-black font-sans smooth-scroll scrollbar">
-    <div id="content"><div class="z-20 px-6 py-6 md:px-8">
+<body class="h-screen bg-black font-sans overflow-x-auto smooth-scroll">
+    <div id="content"><div class="z-20 px-6 py-6 md:px-8 pt-[2%]">
   <nav class="z-20 flex items-center justify-between px-[2%]" aria-label="Global">
     <div class="w-full z-20 flex justify-center md:justify-start md:flex-1">
       <a href="/" class="z-20 -m-1.5 p-1.5">
         <span class="sr-only">Geviton</span>
-        <img class="h-20 z-20 " src="/images/logos/logo.png" alt="">
+        <img class="h-10 z-20 " src="/images/logos/logo.png" alt="">
       </a>
     </div>
     <div class="z-20 hidden md:flex md:gap-x-12 text-white font-light text-lg">
@@ -99,9 +79,6 @@
           </li>
         </ul>
       </div>
-
-
-      
     </div>
 
     <div class="z-10 hidden md:flex md:flex-1 md:justify-end ">
@@ -112,8 +89,7 @@
 </div>
 
 
-
-<div class="text-white md:h-screen w-full">
+<div class="text-white md:h-[130vh] w-full overflow-y-visible ">
   <div class="absolute bottom-0 left-0 right-0 top-0 w-full overflow-x-clip overflow-y-visible z-0">
     <svg fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full overflow-x-clip overflow-y-visible z-0 scale-115">
       <g filter="url(#filter0_f_302_3687)">
@@ -201,7 +177,7 @@
 </main>
 </div>
 
-<div class="relative px-[10%] min-h-screen  w-full text-white bg-black" id="services">
+<div class="relative px-[10%] h-screen text-white -translate-y-60" >
   <div class="absolute h-full top-0 bottom-0 left-0 right-0 overflow-x-clip overflow-y-visible">
     <svg viewBox="0 0 1310 1355" fill="none" xmlns="http://www.w3.org/2000/svg"
       class="w-full h-screen scale-150 overflow-y-visible">
@@ -228,7 +204,7 @@
   </div>
   <div class="grid h-full place-items-center justify-start">
     <div>
-      <h1 class="text-[2rem] text-[#989593] py-5 ">Our services</h1>
+      <h1 class="text-[2rem] text-[#989593] py-5 " id="services">Our services</h1>
       <div class="grid  md:grid-cols-3 xs:grid-cols-1 gap-y-5 h-full gap-x-9 justify-center place-items-center text-white ">
         <div class="bg-[#05302a] w-full h-full rounded-lg px-5 py-9  flex flex-col">
           <svg fill="#ffffff" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"
@@ -241,8 +217,6 @@
               </path>
             </g>
           </svg>
-
-
           <h2 class="text-3xl font-extrabold py-5">Ideation</h2>
           <p class="">
             We partner with startups, enterprises, and innovators to develop viable product ideas with clear development and manufacturing goals.
@@ -269,7 +243,7 @@
           </svg>
 
 
-          <h2 class="text-3xl text-bold py-5">Prototyping</h2>
+          <h2 class="text-3xl font-extrabold py-5">Prototyping</h2>
           <p class="pb-5 ">
             We use our extensive hardware platform experience to provide affordable prototyping and R&D costs with fair mass production clauses.
           </p>
@@ -300,7 +274,7 @@
                 stroke-linecap="round" stroke-linejoin="round"></path>
             </g>
           </svg>
-          <h2 class="text-3xl text-bold py-5">Mass Production</h2>
+          <h2 class="text-3xl font-extrabold py-5">Mass Production</h2>
           <p class="pb-5">
             We maintain strong relationships with PCBA and product assembly factories, as well as key electronic component distributors to ensure a seamless mass production process.
           </p>
@@ -310,7 +284,7 @@
   </div>
 </div>
 
-<div class="relative grid md:h-[80%]  place-items-center justify-start px-[10%] py-[20%] md:py-0 text-white">
+<div class="relative grid md:h-[100vh]  place-items-center justify-start px-[10%] py-[20%] md:py-0 text-white">
   <div class="hidden md:grid video-container absolute bottom-0 left-0 right-0 top-0 w-full h-full overflow-x-clip overflow-y-clip z-0 opacity-25 pointer-events-none">
     <iframe class="z-0 w-screen h-full py-0 scale-150 " src="https://www.youtube.com/embed/JCJ6CD14n3w?controls=0&autoplay=1&mute=1&loop=1&playlist=JCJ6CD14n3w&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;"></iframe>
   </div>
@@ -321,12 +295,12 @@
 </div>
 </div>
 
-<div class="md:h-[50%] text-black bg-white" id="partners">
+<div class="md:h-[100vh] text-black bg-white" id="partners">
   <p class="text-2xl font-light md:text-[4rem] px-[10%] py-[5%] leading-relaxed">
     Our clients are innovators who make the world go round.
   </p>
-    <div class="items-center overflow-x-clip scrollbar w-full">
-    <div class="marquee h-full inline-flex  whitespace-nowrap items-center scrollbar w-full" x-data="Marquee({ speed: 0.3, spaceX: 0 })">
+  <div class="flex flex-col overflow-x-auto invisi-scrollbar items-center">
+    <div class="marquee h-full inline-flex  whitespace-nowrap items-center scrollbar w-full" x-data="Marquee({speed: 0.3, spaceX: 0 })">
       <div class="flex-shrink-0">
         <a class="h-full saturate-50 hover:saturate-100" href="https://cyberx.co.ke/">
           <img alt="partner.logo" class="px-7 py-0  max-w-[300px]" src="images/logos/partners/cyber-x.png">
@@ -338,6 +312,7 @@
         </a>
       </div>
       <div class="flex-shrink-0">
+
         <a class="h-full saturate-50 hover:saturate-100" href="https://enzimotors.com/">
           <img alt="partner.logo" class="px-7 py-0  max-w-[300px]" src="images/logos/partners/enzi.png">
         </a>
@@ -362,24 +337,26 @@
         <a class="h-full saturate-50 hover:saturate-100" href="https://www.ecobodaa.bike/">
           <img alt="partner.logo" class="px-7 py-0 max-w-[300px]" src="images/logos/partners/ecobodaa.png">
         </a>
-      </div >
+      </div>
       <div class="flex-shrink-0">
         <a class="h-full saturate-50 hover:saturate-100" href="https://ultrared.biz/">
           <img alt="partner.logo" class="px-7 py-0  max-w-[300px]"
             src="images/logos/partners/ultra-red-technologies.png">
         </a>
       </div>
-      <div  class="flex-shrink-0">
+      <div class="flex-shrink-0">
         <a class="h-full saturate-50 hover:saturate-100" href="https://www.gearbox-europlacer.com/">
           <img alt="partner.logo" class="px-7 py-0  max-w-[300px]"
             src="images/logos/partners/gearbox-europlacer.png">
         </a>
       </div>
     </div>
-</div>
+
+
+  </div>
 </div>
 
-<div id="footer" class="w-full md:h-screen bg-white text-black place-items-center ">
+<div id="footer" class="md:min-h-screen bg-white text-black place-items-center ">
     <div class="text py-13 h-4/5">
         <p class="pb-9 text-2xl md:text-7xl font-light px-[10%] text-black pt-[22%] xs:allign-bottom">
             Have a project in mind? <br />
@@ -388,29 +365,28 @@
         </p>
     </div>
     <hr>
-  <div class="bg-white grid md:grid-cols-4 xs:grid-cols-1 gap-2 allign-top text-black pt-28 pb-9">
+    <div class="  flex flex-col md:grid md:grid-cols-4 gap-5 md:allign-top pt-14 pb-9">
     <div class="md:px-[15%] px-11 order-last md:order-first place-items-center text-center">
       <img src="/images/logos/logo-black.png" alt="">
       <p class="pt-3">© 2023 Geviton Enterprise</p>
     </div>
         <div class="md:px-[15%] px-11 z-10 text-center md:text-start">
             <h3 class="text-2xl pb-6 font-semibold">Contact Us</h3>
-            <a href="tel:+254724149923">+254 724 149923</a> <br>
-            <a href="tel:+254713932088">+254 713 932088</a> <br>
+            <a href="tel:+254740223196">+254740223196</a> <br>
             <a href="mailto:info@geviton.co.ke">info@geviton.co.ke</a>
 
         </div>
         <div class="md:px-[15%] px-11 z-10 text-center md:text-start">
             <h3 class="text-2xl font-semibold">Visit Us</h3>
             <a class="hover:text-primary" href="https://goo.gl/maps/xpBRCM6cAJW7gLqp8" target="_blank">
-                <p class="pt-6">Office no. G7, 5th Floor <br> Krishna Center, Woodvale Crove <br> Westlands, Nairobi.
+                <p class="pt-6">Office no. G7, 5th Floor <br> Krishna Center, Woodvale Grove <br> Westlands, Nairobi.
                 </p>
             </a>
         </div>
 
-        <div class="px-11 z-10 w-full">
+        <div class="md:px-[15%] px-11 z-10">
             <iframe
-        class="w-full "
+          class="w-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8466328573245!2d36.80145091475397!3d-1.2645417990776702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f171556f250f7%3A0x28319a5d3b7730a9!2sKrishna%20Centre!5e0!3m2!1sen!2ske!4v1673275387638!5m2!1sen!2ske"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -424,7 +400,7 @@
     </div>
 
     
-    <div class="animate-bounce fixed bottom-[15%] right-[6%] h-[70px] w-[70px] px-5 py-5 bg-[#fef3eb] rounded-2xl border-1 border-black z-20"
+    <div class="fixed bottom-[15%] right-[6%] h-[70px] w-[70px] px-5 py-5 bg-[#fef3eb] rounded-2xl border-1 border-black z-20"
         id="backtotop">
         <a href="#" class="h-full w-full z-20">
             <svg class="" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">

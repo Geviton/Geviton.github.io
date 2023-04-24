@@ -12,53 +12,33 @@
     
     
     
+    
     <meta name="description"
       content="Smart Tank Level Sensor" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="icon" href="/images/logos/logo-orange.png" />
-    <link rel="stylesheet" type="text/css" href="https://www.geviton.co.ke/css/index.a41be98e5e65b185b46e23a9a1398608.min.css" />
-    <script src="//unpkg.com/alpinejs" defer></script>
-    <script src="https://www.geviton.co.ke/scripts/marquee.75bac6809bb80ad6ecd6a1645ca091d5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.geviton.co.ke/css/index.2132a6e4d89ab867799095ce1bfa383f.min.css" />
+    <script src="https://www.geviton.co.ke/scripts/cdn.min.4b5643f7d8641662eb58a3eee6009752.js" defer></script>
     <script src="https://www.geviton.co.ke/scripts/flowbite.min.9e0da67ed92998d69665bf9f7e6faaf5.js"></script>
+    <script src="https://www.geviton.co.ke/scripts/marquee.7dbcad385138fd2703b86c19a3cc121d.min.js"></script>
     <title>
 SIMTANKH20 | Geviton
 </title>
-
-  <style>
-  @layer utilities {
-    .scrollbar::-webkit-scrollbar {
-      width: 0px;
-      height: 0px;
-    }
-  }
-  .marquee {
-    animation: scrolling var(--marquee-time) linear infinite;
-  }
-
-  .marquee:hover {
-    animation-play-state: paused;
-  }
-
-  @keyframes scrolling {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-1 * var(--marquee-width))); }
-  }
-  </style>
 
 </head>
 <div id="#">
     <div id="status"></div>
 </div>
 
-<body class="h-screen bg-black font-sans smooth-scroll scrollbar">
-    <div id="content"><div class="z-20 px-6 py-6 md:px-8">
+<body class="h-screen bg-black font-sans overflow-x-auto smooth-scroll">
+    <div id="content"><div class="z-20 px-6 py-6 md:px-8 pt-[2%]">
   <nav class="z-20 flex items-center justify-between px-[2%]" aria-label="Global">
     <div class="w-full z-20 flex justify-center md:justify-start md:flex-1">
       <a href="/" class="z-20 -m-1.5 p-1.5">
         <span class="sr-only">Geviton</span>
-        <img class="h-20 z-20 " src="/images/logos/logo.png" alt="">
+        <img class="h-10 z-20 " src="/images/logos/logo.png" alt="">
       </a>
     </div>
     <div class="z-20 hidden md:flex md:gap-x-12 text-white font-light text-lg">
@@ -102,9 +82,6 @@ SIMTANKH20 | Geviton
           </li>
         </ul>
       </div>
-
-
-      
     </div>
 
     <div class="z-10 hidden md:flex md:flex-1 md:justify-end ">
@@ -177,14 +154,13 @@ SIMTANKH20 | Geviton
       <img src="/images/logos/logo-green.png" alt="">
       <p class="pt-3">© 2023 Geviton Enterprise</p>
         </div>
-        <div class="md:px-[15%] px-11 z-10">
+        <div class="md:px-[15%] px-11 z-10 text-center md:text-start">
             <h3 class="text-2xl pb-6 font-semibold shadow-sm-400px">Contact Us</h3>
-            <a href="tel:+254724149923">+254 724 149923</a> <br>
-            <a href="tel:+254713932088">+254 713 932088</a> <br>
+            <a href="tel:+254740223196">+254740223196</a> <br>
             <a href="mailto:info@geviton.co.ke">info@geviton.co.ke</a>
 
         </div>
-        <div class="md:px-[15%] px-11 z-10">
+        <div class="md:px-[15%] px-11 z-10 text-center md:text-start">
             <h3 class="text-2xl font-semibold">Visit Us</h3>
 
             <a class="hover:text-primary" href="https://goo.gl/maps/xpBRCM6cAJW7gLqp8" target="_blank">
@@ -192,8 +168,9 @@ SIMTANKH20 | Geviton
                 </p>
             </a>
         </div>
-        <div class="md:px-[15%] px-11 z-10">
+        <div class="md:px-[15%] px-11 z-10 text-center md:text-start">
             <iframe
+        class="w-full"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8466328573245!2d36.80145091475397!3d-1.2645417990776702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f171556f250f7%3A0x28319a5d3b7730a9!2sKrishna%20Centre!5e0!3m2!1sen!2ske!4v1673275387638!5m2!1sen!2ske"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -206,7 +183,7 @@ SIMTANKH20 | Geviton
     </div>
 
     
-    <div class="animate-bounce fixed bottom-[15%] right-[6%] h-[70px] w-[70px] px-5 py-5 bg-[#fef3eb] rounded-2xl border-1 border-black z-20"
+    <div class="fixed bottom-[15%] right-[6%] h-[70px] w-[70px] px-5 py-5 bg-[#fef3eb] rounded-2xl border-1 border-black z-20"
         id="backtotop">
         <a href="#" class="h-full w-full z-20">
             <svg class="" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
